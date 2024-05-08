@@ -1,48 +1,101 @@
-# Heading1
+# Python Fundamentals
 
-## Heading 2
+## Topic Overview
 
-### Heading 3
+### Introduction
+- Course Overview
+    1. Why Python
+    2. Setting up your machine
+    3. Data Types and Operators
+    4. Strings and String manipulation
+    5. Variables
+    6. Collections
+    7. Control Flow
+    8. Loops
+    9. Function
+    10. Bringing it all together
 
-#### Heading 4
 
-*Italic*<br>
-<br>
-**Bold**
+### Course Setup
 
-## Bullet points
+- Python Installation - Mac
 
-- bullet 1
-- bullet 2
+- Python Installation - Windows
 
-* bullet 1
-    * subbullet 1
+- Pycharm Installation
 
-1. Step 1
-2. Step 2
-    3. Step 3.1
+- First Python Project
+   - Short Introduction of virtual environment
+   - First Project: `print("Hello World!")`
 
-## Code snippets and blocks
+- Commenting Code
 
-Code Snippet:
+- Topic Assessment Questions
 
-`code snippet`
+### Data Types
 
-You can do this using "\`". Wrap what you want to make a code snippet like `this`.
+- Data Types Intro
+  - Integers/Floats
+  - Strings
+  - Boolean
 
-Code block:
+- Numbers and Math Operators
+  - Math Operators: `+`, `-`, `*`, `/`, `%`
+  - Built-In Function: `type()`
 
-```python
-message = "Hello World"
-print(message)
-```
+- String Basics
+  - Unicode Characters
+  - Indexing
+  - Built-In Function: `len()`
 
-You can create a code block by using 3 backticks and putting your code inside those backticks. For example:
+- Boolean & Equality Operators
+  - Equality Operators: `==`, `!=`, `>`, `<`, `>=`, `<=`
 
-"\```"<br>
-Code goes here
-"`````"
+- Topic Assessment Questions
 
-## Images and links
+### Variables
 
-How do you ass images and links to markdown?
+- Variables Introduction
+  - Python Style Guide: [(https://peps.python.org/pep-0008/)](https://peps.python.org/pep-0008/)
+
+- Topic Assessment Questions
+
+### More on Strings
+
+- Concatenation & Escape Characters
+
+- String Methods
+  - Python String Methods: [(https://docs.python.org/3/library/stdtypes.html#string-methods)](https://docs.python.org/3/library/stdtypes.html#string-methods)
+
+- Topic Assessment Questions
+
+### Control Flow
+
+- Control Flow Introduction
+- Control Flow Exercise
+- Topic Assessment Questions
+
+### Collections
+
+- Collections Introduction
+- Lists
+- Dictionaries
+- Topic Assessment Questions
+
+### Loops
+
+- Loops Introduction
+- While Loops
+- Number Guessing Game
+- For Loop
+- Topic Assessment Questions
+
+### Functions
+
+- Functions Introduction
+- Topic Assessment Questions
+
+### Coding Walkthrough
+
+- Basic Calculator - Code Along
+- Scrabble Calculator - Code Along
