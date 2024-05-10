@@ -12,7 +12,6 @@
   6. Control Flow
   7. Loops
   8. Function
-  9. Bringing it all together
 
 
 ### Course Setup
@@ -33,18 +32,18 @@
      2. Select `New` and then `File`
      3. Enter the name of the File with the extension `.py` for Python: `hello_world.py`
      4. Type `print("Hello World!")` and click on the play button
-     5. You should receive the following in your terminal:
+     5. You should receive the following in your terminal:<br>
      ![print statement](img_1.png)
      Congratulations! You have written your first code!
 
 - Commenting Code
   - It is important to add comments as this can help another person to understand your code
   - You can comment code in different ways:
-    - Adding a hashtag at the start of your comment:
+    - Adding a hashtag at the start of your comment:<br>
     ![comment](img_2.png)
-    - You can also add in-line comments:
+    - You can also add in-line comments:<br>
     ![in-line comment](img_3.png)
-    - You can also add multi-line string as this can be used as a comment as well:
+    - You can also add multi-line string as this can be used as a comment as well:<br>
     ![multi line string](img_4.png)
     
   
@@ -84,10 +83,10 @@
     - We use square brackets for this `[]`
     - The first character starts with the index `0` 
     - The first index is the starting index, which is included
-    - The last index is the ending index, which is excluded
+    - The last index is the ending index, which is excluded<br>
       ![index example](img_7.png) ![output - index](img_8.png)
     - As we can see, we were able to slice the string by indexing `[0:5]` which returned `Hello`
-  
+  - Strings are immutable, which means you can not change them. In order to store the changed string, you will need to store it in another variable
   - Built-In Function: `len()`
     - The len() function returns the length of a string
 
@@ -113,40 +112,74 @@
 ### More on Strings
 
 - Concatenation & Escape Characters
-  - You can add strings to one another using the `+` operator (Please bear in mind that you cannot concatenate a string with a non-string using this method):
+  - You can add strings to one another using the `+` operator (Please bear in mind that you cannot concatenate a string with a non-string using this method):<br>
     ![concat with plus](img_12.png)
-  - You can also use the f-string method:
+  - You can also use the f-string method:<br>
     ![f-string](img_14.png)
-  - You can also use the format() method:
+  - You can also use the format() method:<br>
     ![format()](img_15.png)
-The output will be the same for all 3 options:
+  - The output will be the same for all 3 options:<br>
     ![output of concat](img_13.png)
 
+  - Python uses the backslash `\` as an escape character:
+    - `\n` = Newline - inserts a new line
+    - `\t` = Tab - inserts a tab
+    - `\s` = inserts a space
+
 - String Methods
-  - Python String Methods: [https://docs.python.org/3/library/stdtypes.html#string-methods](https://docs.python.org/3/library/stdtypes.html#string-methods)
+  - There are different methods to manipulate strings such as:
+    - .upper() = converts string to uppercase
+    - .lower() = converts string to lowercase
+    - .strip() = removes any whitespace from the start and the end of the string
+    - .replace('oldText', 'newText') = replaces any occurrences of 'oldText' with 'newText' 
+  - Further Python String Methods: [https://docs.python.org/3/library/stdtypes.html#string-methods](https://docs.python.org/3/library/stdtypes.html#string-methods)
 
 
 ### Control Flow
 
-- Control Flow Introduction
-- Control Flow Exercise
+- This refers to the order in which the individual statements of a program are executed
+- We use conditional statements for this, also called if-elif statements
+- These are used to execute different blocks of code based on whether a certain condition is true or false.<br>
+  ![conditional statement](Images/img.png)
 
 ### Collections
 
-- Collections Introduction
 - Lists
+  - A list allows you to create a list of values, which can be of any data type
+  - They are index based, which means that each value can be found by its index
+    ![list](img_1.png)
+  
 - Dictionaries
+  - A dictionary is based on `{key: value}` pairs
+  - Elements in dictionaries are access via keys
+  - The key must be immutable (can be any data type other than a list or a dictionary) and unique
+  - The value can be of any data type
+
 
 ### Loops
 
-- Loops Introduction
 - While Loops
-- Number Guessing Game
+  - A while loop takes a code block and keeps executing it while a given condition stays `True`
+  - The while statement repeats its action until this controlling condition becomes `False`
+  - These statements need to be indented in the loop
+  - A while loop starts with `while` followed by a boolean expression
+  - It can run the risk of running forever if the condition never becomes `False`. This is called infinite loop.
+  - To avoid an infinite loop, make sure your while loop condition eventually becomes `False` and that your loop is exited
+
+
 - For Loop
+  - A for loop is a counter-controlled loop, which means that the number of repetitions in a for loop is known a head of time
+  - In each iteration (or repetition) of the for loop the code that is indented is repeated
+  - A for loop starts with `for` followed by a variable that will hold each of the values of the sequence as we iterate through it
+
 
 ### Functions
 
-- Functions Introduction
-
+- Functions allow us to write block of codes that break our code down into smaller modular parts
+- They help our program to be more organised and makes our code reusable
+- To create a function you need to start with `def` followed by the name of our function followed by parentheses
+- Everything belonging to the functions needs to be indented:
+  
+- In order to execute a function, you will need to call the function:
 
 
