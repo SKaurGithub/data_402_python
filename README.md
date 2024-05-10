@@ -33,18 +33,20 @@
      3. Enter the name of the File with the extension `.py` for Python: `hello_world.py`
      4. Type `print("Hello World!")` and click on the play button
      5. You should receive the following in your terminal:<br>
-     ![print statement](img_1.png)
+     ![print statement](https://github.com/SKaurGithub/data_402_python/assets/153448835/4800a790-0c0e-4b1e-a357-12cc483e4f88)
+
      Congratulations! You have written your first code!
 
 - Commenting Code
   - It is important to add comments as this can help another person to understand your code
   - You can comment code in different ways:
     - Adding a hashtag at the start of your comment:<br>
-    ![comment](img_2.png)
+    ![comment](https://github.com/SKaurGithub/data_402_python/assets/153448835/1c663ff3-433f-4c9a-a543-d6b26c49ef6a)
     - You can also add in-line comments:<br>
-    ![in-line comment](img_3.png)
+    ![in-line comment](https://github.com/SKaurGithub/data_402_python/assets/153448835/f60e5515-9c49-4891-8a03-2c459f29ee35)
     - You can also add multi-line string as this can be used as a comment as well:<br>
-    ![multi line string](img_4.png)
+    ![multi line string](https://github.com/SKaurGithub/data_402_python/assets/153448835/b08b8616-6253-43cb-845c-5125954d11db)
+
     
   
 
@@ -71,7 +73,9 @@
 
   - Built-In Function: `type()`
     - This function will show you the type of your output:
-    ![type()](img_5.png) ![output of type()](img_6.png)
+    ![type()](https://github.com/SKaurGithub/data_402_python/assets/153448835/8f1b2949-fe4c-4559-b165-5f075addeb8e)
+ ![output of type()](https://github.com/SKaurGithub/data_402_python/assets/153448835/adc8d656-5c4a-4f02-8238-711099f58a71)
+
     
 
 - String Basics
@@ -84,7 +88,9 @@
     - The first character starts with the index `0` 
     - The first index is the starting index, which is included
     - The last index is the ending index, which is excluded<br>
-      ![index example](img_7.png) ![output - index](img_8.png)
+      ![index example](https://github.com/SKaurGithub/data_402_python/assets/153448835/090d1304-6fff-47ad-aa26-79999d6c5ba3)
+ ![output - index](https://github.com/SKaurGithub/data_402_python/assets/153448835/ac056cd2-1165-458e-a33b-4f1a20e32756)
+
     - As we can see, we were able to slice the string by indexing `[0:5]` which returned `Hello`
   - Strings are immutable, which means you can not change them. In order to store the changed string, you will need to store it in another variable
   - Built-In Function: `len()`
@@ -93,9 +99,10 @@
 - Boolean & Equality Operators
   - Equality Operators: `==`, `!=`, `>`, `<`, `>=`, `<=`
     - These operators can help to compare values:
-      ![Equality Operators](img_9.png)
-      ![equality operators example](img_10.png)
-      ![equality operators output](img_11.png)
+      ![Equality Operators](https://github.com/SKaurGithub/data_402_python/assets/153448835/398df4aa-e3c2-4b6c-853e-dd0d7c3f72f8)
+      ![equality operators example](https://github.com/SKaurGithub/data_402_python/assets/153448835/23fdcc29-6b6c-4369-98d0-a2526b6d118f)
+      ![equality operators output](https://github.com/SKaurGithub/data_402_python/assets/153448835/948846be-3827-47d4-bcaa-143f5e989945)
+
 
 
 ### Variables
@@ -113,13 +120,14 @@
 
 - Concatenation & Escape Characters
   - You can add strings to one another using the `+` operator (Please bear in mind that you cannot concatenate a string with a non-string using this method):<br>
-    ![concat with plus](img_12.png)
+    ![concat with plus](https://github.com/SKaurGithub/data_402_python/assets/153448835/1b3cc7f3-c237-4ce4-acac-ceb21014a152)
   - You can also use the f-string method:<br>
-    ![f-string](img_14.png)
+    ![f-string](https://github.com/SKaurGithub/data_402_python/assets/153448835/8b847c83-c72d-4b15-a91c-2e5d0d79a10b)
   - You can also use the format() method:<br>
-    ![format()](img_15.png)
+    ![format()](https://github.com/SKaurGithub/data_402_python/assets/153448835/e8e58563-69f3-46cb-bf4d-51edb57d16cb)
   - The output will be the same for all 3 options:<br>
-    ![output of concat](img_13.png)
+    ![output of concat](https://github.com/SKaurGithub/data_402_python/assets/153448835/32873843-8cb7-42b3-bdca-904bb7ae8f9c)
+
 
   - Python uses the backslash `\` as an escape character:
     - `\n` = Newline - inserts a new line
