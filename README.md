@@ -41,12 +41,20 @@
   - It is important to add comments as this can help another person to understand your code
   - You can comment code in different ways:
     - Adding a hashtag at the start of your comment:<br>
-    ![comment](https://github.com/SKaurGithub/data_402_python/assets/153448835/1c663ff3-433f-4c9a-a543-d6b26c49ef6a)
+     ```python
+  # This is a comment.
+    print("Hello World") 
+    ```
     - You can also add in-line comments:<br>
-    ![in-line comment](https://github.com/SKaurGithub/data_402_python/assets/153448835/f60e5515-9c49-4891-8a03-2c459f29ee35)
+    ```python 
+    print("Hello World")  # This is an in-line comment.
+    ```
     - You can also add multi-line string as this can be used as a comment as well:<br>
-    ![multi line string](https://github.com/SKaurGithub/data_402_python/assets/153448835/b08b8616-6253-43cb-845c-5125954d11db)
-
+    ```python
+      '''
+      This is a multi line string, which can be used for commenting. 
+      '''
+    ```
     
   
 
@@ -73,8 +81,13 @@
 
   - Built-In Function: `type()`
     - This function will show you the type of your output:
-    ![type()](https://github.com/SKaurGithub/data_402_python/assets/153448835/8f1b2949-fe4c-4559-b165-5f075addeb8e)
- ![output of type()](https://github.com/SKaurGithub/data_402_python/assets/153448835/adc8d656-5c4a-4f02-8238-711099f58a71)
+    ```python
+    print(type("Hello World"))
+    print(type(10))
+    print(type("10"))
+    ```
+    - The output of the above would be:<br>
+    ![output of type()](https://github.com/SKaurGithub/data_402_python/assets/153448835/adc8d656-5c4a-4f02-8238-711099f58a71)
 
     
 
@@ -88,10 +101,12 @@
     - The first character starts with the index `0` 
     - The first index is the starting index, which is included
     - The last index is the ending index, which is excluded<br>
-      ![index example](https://github.com/SKaurGithub/data_402_python/assets/153448835/090d1304-6fff-47ad-aa26-79999d6c5ba3)
- ![output - index](https://github.com/SKaurGithub/data_402_python/assets/153448835/ac056cd2-1165-458e-a33b-4f1a20e32756)
+    ```python
+    print("Hello World"[0:5])
+    ```
+    - The output of the above would be:<br>
+    ![output - index](https://github.com/SKaurGithub/data_402_python/assets/153448835/ac056cd2-1165-458e-a33b-4f1a20e32756)
 
-    - As we can see, we were able to slice the string by indexing `[0:5]` which returned `Hello`
   - Strings are immutable, which means you can not change them. In order to store the changed string, you will need to store it in another variable
   - Built-In Function: `len()`
     - The len() function returns the length of a string
@@ -99,8 +114,25 @@
 - Boolean & Equality Operators
   - Equality Operators: `==`, `!=`, `>`, `<`, `>=`, `<=`
     - These operators can help to compare values:
-      ![Equality Operators](https://github.com/SKaurGithub/data_402_python/assets/153448835/398df4aa-e3c2-4b6c-853e-dd0d7c3f72f8)
-      ![equality operators example](https://github.com/SKaurGithub/data_402_python/assets/153448835/23fdcc29-6b6c-4369-98d0-a2526b6d118f)
+    ```python
+    """
+    Operator    | Meaning                   | Example           |
+    ==          | equal to                  | 4 == 4 (True)     |
+    !=          | not equal to              | 4 != 3 (False)    |
+    >           | greater than              | 3 > 4 (False)     |
+    <           | less than                 | 3 < 4 (False)     |
+    >=          | greater than or equal to  | 5 >= 5 (True)     |
+    <=          | less than or equal token  | 5 <= 4 (False)    |
+    """
+    ```
+    - Example:
+    ```python
+    print(2 < 3)
+    print(4 == 5)
+    print(10 <= 12)
+    print(6 != 6)
+    ```
+    - Output:<br>
       ![equality operators output](https://github.com/SKaurGithub/data_402_python/assets/153448835/948846be-3827-47d4-bcaa-143f5e989945)
 
 
@@ -120,11 +152,23 @@
 
 - Concatenation & Escape Characters
   - You can add strings to one another using the `+` operator (Please bear in mind that you cannot concatenate a string with a non-string using this method):<br>
-    ![concat with plus](https://github.com/SKaurGithub/data_402_python/assets/153448835/1b3cc7f3-c237-4ce4-acac-ceb21014a152)
+  ```python
+  hello = "Hello"
+  world = "World!"
+  print(hello + " " + world)
+  ```
   - You can also use the f-string method:<br>
-    ![f-string](https://github.com/SKaurGithub/data_402_python/assets/153448835/8b847c83-c72d-4b15-a91c-2e5d0d79a10b)
+  ```python
+  hello = "Hello"
+  world = "World!"
+  print(f"{hello} {world})
+  ```
   - You can also use the format() method:<br>
-    ![format()](https://github.com/SKaurGithub/data_402_python/assets/153448835/e8e58563-69f3-46cb-bf4d-51edb57d16cb)
+  ```python
+  hello = "Hello"
+  world = "World!"
+  print("{} {}".format(hello, world))
+  ```
   - The output will be the same for all 3 options:<br>
     ![output of concat](https://github.com/SKaurGithub/data_402_python/assets/153448835/32873843-8cb7-42b3-bdca-904bb7ae8f9c)
 
@@ -148,20 +192,49 @@
 - This refers to the order in which the individual statements of a program are executed
 - We use conditional statements for this, also called if-elif statements
 - These are used to execute different blocks of code based on whether a certain condition is true or false.<br>
-  ![conditional statement](Images/img.png)
+  ```python
+"""
+1. between 05:00-12:00 -> Good morning
+2. between 12:00-18:00 -> Good afternoon
+3. between 18:00-22:00 -> Good evening
+4. between 22:00-05:00 -> Good night
+"""
+
+time_of_day = 19
+
+# Or & And
+
+if time_of_day > 5 and time_of_day < 12:
+  print("Good morning")
+elif time_of_day > 12 and time_of_day < 18:
+  print("Good afternoon")
+elif time_of_day > 18 and time_of_day < 22:
+  print("Good evening")
+else:
+  print("Good night")
+```
 
 ### Collections
 
 - Lists
   - A list allows you to create a list of values, which can be of any data type
   - They are index based, which means that each value can be found by its index
-    ![list](img_1.png)
+  - Example:<br>
+  ```python
+  list1 = ["abc", 34, True, 40.5, "Male", [1, 2, 3]]
+  ```
   
 - Dictionaries
   - A dictionary is based on `{key: value}` pairs
   - Elements in dictionaries are access via keys
   - The key must be immutable (can be any data type other than a list or a dictionary) and unique
   - The value can be of any data type
+  - Example:
+  ```python
+  dict = {"name": "Zara",
+          "age": 26,
+          "scores": [65, 75,90]}
+  ```
 
 
 ### Loops
@@ -186,8 +259,7 @@
 - Functions allow us to write block of codes that break our code down into smaller modular parts
 - They help our program to be more organised and makes our code reusable
 - To create a function you need to start with `def` followed by the name of our function followed by parentheses
-- Everything belonging to the functions needs to be indented:
-  
-- In order to execute a function, you will need to call the function:
+- Everything belonging to the functions needs to be indented
+- In order to execute a function, you will need to call the function
 
 
