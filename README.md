@@ -41,8 +41,8 @@
   - It is important to add comments as this can help another person to understand your code
   - You can comment code in different ways:
     - Adding a hashtag at the start of your comment:<br>
-     ```python
-  # This is a comment.
+    ```python
+    # This is a comment.
     print("Hello World") 
     ```
     - You can also add in-line comments:<br>
@@ -51,9 +51,9 @@
     ```
     - You can also add multi-line string as this can be used as a comment as well:<br>
     ```python
-      '''
-      This is a multi line string, which can be used for commenting. 
-      '''
+    '''
+    This is a multi line string, which can be used for commenting. 
+    '''
     ```
     
   
@@ -192,7 +192,7 @@
 - This refers to the order in which the individual statements of a program are executed
 - We use conditional statements for this, also called if-elif statements
 - These are used to execute different blocks of code based on whether a certain condition is true or false.<br>
-  ```python
+```python
 """
 1. between 05:00-12:00 -> Good morning
 2. between 12:00-18:00 -> Good afternoon
